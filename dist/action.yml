@@ -1,0 +1,31 @@
+name: Upload & Publish Chrome Extension
+
+description: Action for uploading chrome extensions
+
+branding:
+  icon: upload-cloud
+  color: green
+
+inputs:
+  app-id:
+    description: Extension application target id
+    required: true
+  refresh-token:
+    description: Auth refresh token
+    required: true
+  client-id:
+    description: Token client id
+    required: true
+  client-secret:
+    description: Token client secret
+    required: true
+  file-name:
+    description: Name of zipped target upload file
+    required: true
+  publish:
+    description: Publish after upload
+    required: false
+
+runs:
+  using: node12
+  main: index.js

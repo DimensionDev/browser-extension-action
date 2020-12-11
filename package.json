@@ -1,0 +1,27 @@
+{
+  "name": "@dimensiondev/browser-extension-action",
+  "private": true,
+  "repository": "https://github.com/DimensionDev/browser-extension-action",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build -m ./src/index.ts",
+    "lint": "eslint . --ext .js,.ts"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "node-fetch": "^2.6.1",
+    "urlcat": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.6",
+    "@types/node": "^14.14.12",
+    "@types/node-fetch": "^2.5.7",
+    "@types/prettier": "^2.1.5",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "@vercel/ncc": "^0.25.1",
+    "eslint": "^7.15.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2"
+  }
+}
